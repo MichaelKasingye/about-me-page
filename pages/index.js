@@ -2,7 +2,7 @@ import React from "react";
 
 import Image from 'next/image'
 import about from "../styles/About.module.css";
-import {intro, skills, Career, docs} from "../library/careerData"
+import {intro, skills, Career, docs, back} from "../library/careerData"
 import Paragraph from "../components/Paragraph";
 import Title from "../components/Title";
 import Button from "../components/Button";
@@ -86,7 +86,14 @@ function About() {
     {/* </div> */}
   {/* <Paragraph text={skills.skill}/> */}
 
-  <Button text ="View Resume" link={docs.Resume}/>
+<div className={about.bottom}>
+<div className={about.bottomButton}>  <Button text ="Back" link={back}/></div>
+<div className={about.bottomButton}><Button text ="View Resume" link={docs.Resume}/></div>
+
+  
+
+
+</div>
 
     </div>
   );

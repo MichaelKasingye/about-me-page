@@ -1,8 +1,9 @@
 
-
+export const back = "https://michaelkasingye.netlify.app"
 export const docs = {
     certificates: "https://drive.google.com/drive/folders/1jPUA3rteZ1FD6_gUF1TpJmSU8qyiUZ6r",
     Resume : "https://drive.google.com/file/d/18jt5lv_GNfFr_oBAGb_5kC42KmRYkAEn/view?usp=sharing",
+    
     
   }
 export const moreMe = [
