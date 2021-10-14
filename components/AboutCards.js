@@ -4,19 +4,21 @@ import cards from "../styles/AboutCards.module.css";
 import Link from "next/link";
 
 function Cards({ title, desc, img, path }) {
+  console.log(title, img);
   return (
     <Link href={path}>
       <a target="_blank" rel="noopener noreferrer"> 
     <div className={cards.height}>
   
       <div className="card h-100" 
-      className={cards.introCards}>
-        {img && <img src={img} className="card-img-top h-50" className={cards.image} alt="..." />}
+      // className={cards.introCards}
+      >
+        {/* {img && <img src={img} className="card-img-top h-50" className={cards.image} alt="..." />} */}
         
         <div className="card-body">
-          <h5 className="card-title text-l " className={cards.orange}>
+          {/* <h5 className="card-title text-l " className={cards.orange}>
             {title}
-          </h5>
+          </h5> */}
           <p className="card-text text-secondary " >
             {desc}
           </p>
