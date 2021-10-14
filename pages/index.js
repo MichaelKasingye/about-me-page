@@ -2,9 +2,12 @@ import React from "react";
 
 import Image from 'next/image'
 import about from "../styles/About.module.css";
-import {intro, skills, Career} from "../library/careerData"
+import {intro, skills, Career, docs} from "../library/careerData"
 import Paragraph from "../components/Paragraph";
 import Title from "../components/Title";
+import Button from "../components/Button";
+
+
 Paragraph
 function About() {
   return (
@@ -18,7 +21,7 @@ function About() {
         </div>
       {/* x */}
          <Image
-      loader={({ src, width, quality }) => {
+      loader={({ src }) => {
         return `${src}`}}
       src={intro.image}
       alt="Picture of the author"
@@ -82,6 +85,8 @@ function About() {
     </div>
     {/* </div> */}
   {/* <Paragraph text={skills.skill}/> */}
+
+  <Button text ="View Resume" link={docs.Resume}/>
 
     </div>
   );
