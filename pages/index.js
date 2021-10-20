@@ -40,7 +40,7 @@ function About() {
 </div>
 </div>
 
-  <Title title="What i can do."/>
+  <Title title="What I can do."/>
   <div className={about.rolesContainer}>
 
   <div className={about.rolesCard}>
@@ -68,7 +68,7 @@ function About() {
     </div>
 
 
-    <Title title="What i have been doing."/>
+    <Title title="What I have been doing."/>
     {/* <div className={about.CareerSection}> */}
   <div className={about.Career}>
     {Career.map(career=>(<div className={about.CareerDetails} key={Math.random()}>
